@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Gorgetas</title>
+</head>
+<body>
+    <div id="container">
+    <div>
+      <h1>Calculadora de Gorgeta</h1>
+    </div>
+    <div>
+      <form id="form">
+        <label>
+          <p>Quanto ficou a conta?</p>
+        </label for="bill">
+          <p>
+            R$ <input type="number" placeholder="100" name="bill" id="bill" class="moneyInput"  required>
+          </p>
+        <label>
+          <p>Como foi o serviço? </p>  
+        </label>
+          
+            <select type="number" name="serviceQual" id="serviceQual" class="servQual">
+              <option disable selected value="0">Selecione uma opção</option>  
+              <option value="0.3">30% - Incrivel</option>
+              <option value="0.2">20% - Muito bom</option> 
+              <option value="0.1">10% - Bom</option>
+              <option value="0.5">05% - Aceitável</option>
+              <option value="0.01">01% - Ruim</option>
+            </select>
+            <label for="people">
+              <p>
+                  Quantas pessoas vão dividir a conta?
+              </p>  
+            </label for="people">
+            <p>
+              <input type="number" placeholder="1" name="people" id="people" class="peopleInput" required>
+            </p>
+            <button class="submit" type="submit">Calcular</button>
+      </form>
+    </div>
+    <div id="totalTip">
+      Valor da gorgeta:
+      R$<span id="tip" type="number">0.00</span>
+      <span id="each">cada</span>
+    </div>
+    </div>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

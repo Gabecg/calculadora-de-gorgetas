@@ -1,0 +1,81 @@
+:root {
+  --primary-color: lightblue;
+  --secondary-color: rgba(0, 0, 43, 0.808);
+  --tertiary-color: rgb(118, 173, 199);
+}
+
+h1{
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+  font-size: 18px;
+  text-align: center;
+  padding: 12px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  box-shadow: 0 0 5px var(--tertiary-color);
+}
+
+body {
+  background-color: var(--secondary-color);
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Verdana;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+#container {
+  height: 450px;
+  width: 330px;
+  margin: 100px auto;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 5px var(--primary-color);
+  border-radius: 25px;
+  font-size: 15px;
+  color: var(--secondary-color);
+}
+
+.formInput:focus, .submit:focus{
+  border: 3px solid var(--secondary-color);
+}
+
+.peopleInput {
+  background-color: rgb(228, 223, 223);
+  width: 30px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px;
+  border-color: var(--tertiary-color);
+}
+
+.moneyInput {
+  background-color: rgb(228, 223, 223);
+  width: 40px;
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px;
+  border-color: var(--tertiary-color);
+}
+
+.servQual {
+  background-color: rgb(228, 223, 223);
+  border-color: var(--tertiary-color);
+  color:var(--secondary-color);
+  border-radius: 10px;
+  padding-left: 8px;
+  height: 30px;
+  
+}
+
+.submit {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-size: 20px;
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  border-color: var(--tertiary-color);
+}
+
+#totalTip {
+  margin-top: 15px;
+  font-size: 15px;
+  color: var(--secondary-color);
+}
